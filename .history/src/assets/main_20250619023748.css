@@ -37,17 +37,9 @@
   line-height: 1.5rem;
 }
 
-@media (max-width: 900px) {
-  .before\:left-\[-28px\]::before {
-    left: -22px !important;   
-  }
-}
-
-
-@media (min-width: 900px) {
-  .before\:left-\[-28px\]::before {
-    left: -34px !important; 
-  }
+.before\:left-\[-28px\]::before {
+  content: var(--tw-content);
+  left: -34px !important;
 }
 
 @media (min-width: 1080px) {

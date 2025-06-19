@@ -101,6 +101,6 @@ onBeforeUnmount(() => {
   to { transform: translateY(0); opacity: 1; }
 }
 .animate-slide-down {
-  animation: slide-down 0.3s;
+  animation: slide-down 0.4s;
 }
 </style>

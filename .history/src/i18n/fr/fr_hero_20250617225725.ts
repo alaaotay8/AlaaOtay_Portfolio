@@ -10,7 +10,7 @@ const hero: Hero = {
   profiles: {
     linkedin: 'https://linkedin.com/in/alaa-otay8',
     github: 'https://github.com/alaaotay8',
-    whatsapp: 'https://wa.me/+21654056747'
+    whatsapp: 'https://wa.me/54056747'
   },
   home: 'Accueil'
 }

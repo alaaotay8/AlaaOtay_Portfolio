@@ -25,7 +25,7 @@ const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
     <button
       v-show="showScrollTop"
       @click="scrollToTop"
-      class="fixed bottom-5 right-5 z-50 flex items-center justify-center rounded-full bg-blue-800 text-white p-2 shadow-lg transition-all duration-200 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-200"
+      class="fixed bottom-5 right-5 z-50 flex items-center justify-center rounded-full bg-blue-900 text-white p-2 shadow-lg transition-all duration-200 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-200"
       aria-label="Scroll to top"
       style="width: 50px; height: 50px;"
     >

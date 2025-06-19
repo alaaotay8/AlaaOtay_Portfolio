@@ -39,6 +39,7 @@
 
 @media (max-width: 900px) {
   .before\:left-\[-28px\]::before {
+    content: var(--tw-content);
     left: -22px !important;   
   }
 }

@@ -81,7 +81,7 @@
         <br />
         <span class="text-xs text-gray-400"
           >Made with
-          <a href="https://github.com/alaaotay8/AlaaOtay_Portfolio" target="_blank">AlaaOtay_Portfolio</a></span
+          <a href="https://github.com/alaaotay8/AO_Portfolio" target="_blank">AO_Portfolio</a></span
         >
       </div>
       <div class="grid grid-cols-2 gap-x-3 gap-y-8 text-sm sm:grid-cols-3 lg:w-2/3">
@@ -138,7 +138,7 @@
         </div>
       </div>
     </div>
-    <div class="py-3 text-center text-sm">© 2025 Alaa Otay.</div>
+    <div class="py-3 text-center text-sm">© 2024 Alaa Otay.</div>
   </footer>
 </template>
 

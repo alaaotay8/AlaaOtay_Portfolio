@@ -63,7 +63,7 @@
                 </span>
                 <span
                   v-else
-                  class="alaaotay8@gmail.com source-sans flex items-center gap-x-1 text-base"
+                  class="contact@ralo.dev source-sans flex items-center gap-x-1 text-base"
                 >
                   <svg
                     class="my-auto h-4 w-4 text-white"
@@ -80,44 +80,42 @@
                 </span>
               </button>
             </div>
-            <div class="flex items-center gap-2 social-block">
-              <a
-                v-if="$t('hero.profiles.github') != ''"
-                :href="$t('hero.profiles.github')"
-                target="_blank"
-                rel="noopener"
-              >
-                <GlassButton size="small" bg="bg-neutral-700" title="GitHub profile">
-                  <template #icon>
-                    <GithubIcon class="h-6 w-6" />
-                  </template>
-                </GlassButton>
-              </a>
-              <a
-                v-if="$t('hero.profiles.linkedin') != ''"
-                :href="$t('hero.profiles.linkedin')"
-                target="_blank"
-                rel="noopener"
-              >
-                <GlassButton size="small" bg="bg-sky-700" title="LinkedIn profile">
-                  <template #icon>
-                    <LinkedinIcon class="h-6 w-6" />
-                  </template>
-                </GlassButton>
-              </a>
-              <a
-                v-if="$t('hero.profiles.whatsapp') != ''"
-                :href="$t('hero.profiles.whatsapp')"
-                target="_blank"
-                rel="noopener"
-              >
-                <GlassButton size="small" bg="bg-green-600" title="whatsapp profile">
-                  <template #icon>
-                    <WhatsappIcon class="h-6 w-6" />
-                  </template>
-                </GlassButton>
-              </a>
-            </div>
+            <a
+              v-if="$t('hero.profiles.github') != ''"
+              :href="$t('hero.profiles.github')"
+              target="_blank"
+              rel="noopener"
+            >
+              <GlassButton size="small" bg="bg-neutral-700" title="GitHub profile">
+                <template #icon>
+                  <GithubIcon class="h-6 w-6" />
+                </template>
+              </GlassButton>
+            </a>
+            <a
+              v-if="$t('hero.profiles.linkedin') != ''"
+              :href="$t('hero.profiles.linkedin')"
+              target="_blank"
+              rel="noopener"
+            >
+              <GlassButton size="small" bg="bg-sky-700" title="LinkedIn profile">
+                <template #icon>
+                  <LinkedinIcon class="h-6 w-6" />
+                </template>
+              </GlassButton>
+            </a>
+            <a
+              v-if="$t('hero.profiles.whatsapp') != ''"
+              :href="$t('hero.profiles.whatsapp')"
+              target="_blank"
+              rel="noopener"
+            >
+              <GlassButton size="small" bg="bg-green-600" title="whatsapp profile">
+                <template #icon>
+                  <WhatsappIcon class="h-6 w-6" />
+                </template>
+              </GlassButton>
+            </a>
           </div>
         </span>
         <span class="h-1 w-full bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
@@ -142,7 +140,7 @@ import ContactForm from './ContactSection-Form.vue'
 import { ref } from 'vue'
 
 
-const email = 'alaaotay8@gmail.com'
+const email = 'contact@ralo.dev'
 const copied = ref(false)
 
 function copyEmail() {
@@ -177,21 +175,6 @@ function copyEmail() {
   .custom-shape-divider-top-1714946600 svg {
     width: 800px;
     height: auto;
-  }
-}
-
-@media (max-width: 900px) {
-  .flex-row-mobile {
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 0.5rem !important;
-  }
-  .email-block {
-    justify-content: center;
-    margin-bottom: 0.5rem;
-  }
-  .social-block {
-    justify-content: center;
   }
 }
 </style>
