@@ -127,8 +127,8 @@ Always eager to learn, collaborate, and take on new challenges!
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/alaa-otay8/)
 - 🌐 [Portfolio Website](#)
-- 📫 Contact: [your.email@example.com](mailto:alaaotay8@gamil.com)
-- 💬 WhatsApp: [+1234567890](https://wa.me/+21654056747)
+- 📫 Contact: [alaaotay8@gamil.com](mailto:alaaotay8@gamil.com)
+- 💬 WhatsApp: [+216 54056747](https://wa.me/+21654056747)
 
 ---
 
