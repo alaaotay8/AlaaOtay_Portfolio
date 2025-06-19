@@ -1,0 +1,58 @@
+@import '@fontsource-variable/open-sans';
+@import '@fontsource/source-sans-pro';
+@import '@fontsource/source-sans-pro/700.css';
+@import '@fontsource/source-sans-pro/900.css';
+@import '@fontsource/source-sans-pro/600.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section__title {
+    @apply source-sans mb-5 w-full text-center text-4xl font-semibold uppercase tracking-wider sm:mb-10 sm:text-5xl text-base-950;
+  }
+  /* Values `50` and `100` are the most suitable for light backgrounds */
+  .section-background-color{
+    @apply text-base-100 bg-base-100
+  }
+}
+
+.open-sans {
+  font-family: 'Open Sans Variable', sans-serif;
+}
+
+.source-sans {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.content {
+  max-width: 1000px;
+  padding-inline: 1rem;
+  margin-inline: auto;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.before\:left-\[-28px\]::before {
+  content: var(--tw-content);
+  left: -34px !important;
+}
+
+@media (min-width: 1080px) {
+  .content {
+    padding-inline: 0rem;
+  }
+}
+
+#app {
+  white-space: pre-line;
+}
+
+body {
+  font-display: swap;
+  scroll-behavior: smooth;
+}
