@@ -31,8 +31,9 @@ const projects: Projects = {
       image: 'ao_portfolio.webp',
       description:
         "Mon site portfolio personnel, conçu et développé de A à Z pour présenter mes projets, compétences et expériences. Réalisé avec Vue.js et TypeScript, il offre une interface moderne, des animations fluides et une expérience totalement responsive.",
-      src: 'https://github.com/alaaotay8/AO_Portfolio',
-      url: ''
+      src: 'https://github.com/alaaotay8/AlaaOtay_Portfolio',
+      url: 'https://alaaotay.netlify.app/',
+      linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:7341585422969421825/'
     }
   ],
   other: []
