@@ -2,16 +2,16 @@
   <div data-aos="fade-up">
     <HeroSection />
   </div>
-  <div data-aos="fade-up" data-aos-delay="100">
+  <div data-aos="fade-up" data-aos-delay="80">
     <ExperienceSection />
   </div>
-  <div data-aos="fade-up" data-aos-delay="200">
+  <div data-aos="fade-up" data-aos-delay="90">
     <ProjectsSection />
   </div>
-  <div data-aos="fade-up" data-aos-delay="300">
+  <div data-aos="fade-up" data-aos-delay="100">
     <AboutSection />
   </div>
-  <div data-aos="fade-up" data-aos-delay="400">
+  <div data-aos="fade-up" data-aos-delay="110">
     <ContactSection />
   </div>
 </template>
