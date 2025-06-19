@@ -51,8 +51,12 @@ AlaaOtay_Portfolio/
 ├── src/
 │   ├── assets/
 │   ├── components/
-│   ├── locales/
+│   ├── composables/
+│   ├── i18n/
+│   ├── types/
 │   ├── views/
+│   ├── App.vue
+│   ├── types.d.ts
 │   └── main.ts
 ├── package.json
 ├── tailwind.config.js
