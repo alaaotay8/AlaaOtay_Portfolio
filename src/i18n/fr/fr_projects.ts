@@ -21,7 +21,7 @@ const projects: Projects = {
       image: 'career_profile_generator.webp',
       description:
         "Application FastAPI alimentée par l'IA pour extraire des données structurées de CV grâce à l'OCR et aux LLMs. Intègre Tesseract OCR, fallback Hugging Face, OpenAI, schémas JSON et logique de validation robuste.",
-      src: 'https://github.com/alaaotay8/career-profile-generator',
+      src: 'https://github.com/alaaotay8/cv-insight-extractor',
       url: 'https://cv-insight-extractor.onrender.com/',
       linkedin: 'https://www.linkedin.com/posts/alaa-otay8_laravel-php-webdevelopment-activity-7339452060934852609-u4mZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACLQljUBfoH4EtVdvHXs51RwizxHpr7U45k'
     },
