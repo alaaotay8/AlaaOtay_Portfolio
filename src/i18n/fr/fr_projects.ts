@@ -30,7 +30,7 @@ const projects: Projects = {
       techstack: ['FastAPI', 'Python', 'scikit-learn', 'XGBoost', 'HTML5', 'CSS3', 'JavaScript'],
       image: 'student_performance_predictor.webp',
       description:
-        "Application web alimentée par l'IA qui prédit les performances académiques des étudiants avec une précision de 97% grâce à l'apprentissage automatique. Propose un formulaire interactif avec curseurs en temps réel, méthodes d'ensemble (Random Forest, XGBoost), et traitement de données avancé incluant SMOTE pour gérer le déséquilibre des classes.",
+        "Application web alimentée par l'IA qui prédit les performances académiques des étudiants avec une précision de 92% grâce à l'apprentissage automatique. Propose un formulaire interactif avec curseurs en temps réel, méthodes d'ensemble (Random Forest, XGBoost), et traitement de données avancé incluant SMOTE pour gérer le déséquilibre des classes.",
       src: 'https://github.com/alaaotay8/student-performance-ai',
       url: 'https://student-performance-predictor-ai-live.onrender.com/',
       linkedin: 'https://www.linkedin.com/in/alaa-otay8/'
