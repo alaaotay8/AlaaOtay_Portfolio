@@ -26,6 +26,16 @@ const projects: Projects = {
       linkedin: 'https://www.linkedin.com/posts/alaa-otay8_laravel-php-webdevelopment-activity-7339452060934852609-u4mZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACLQljUBfoH4EtVdvHXs51RwizxHpr7U45k'
     },
     {
+      name: 'Prédicteur de Performance Étudiante',
+      techstack: ['FastAPI', 'Python', 'scikit-learn', 'XGBoost', 'HTML5', 'CSS3', 'JavaScript'],
+      image: 'student_performance_predictor.webp',
+      description:
+        "Application web alimentée par l'IA qui prédit les performances académiques des étudiants avec une précision de 97% grâce à l'apprentissage automatique. Propose un formulaire interactif avec curseurs en temps réel, méthodes d'ensemble (Random Forest, XGBoost), et traitement de données avancé incluant SMOTE pour gérer le déséquilibre des classes.",
+      src: 'https://github.com/alaaotay8/student-performance-ai',
+      url: 'https://student-performance-predictor-ai-live.onrender.com/',
+      linkedin: 'https://www.linkedin.com/in/alaa-otay8/'
+    },
+    {
       name: 'AlaaOtay Portfolio',
       techstack: ['Vue.js', 'TypeScript', 'Tailwind CSS', 'i18n'],
       image: 'ao_portfolio.webp',

@@ -26,6 +26,16 @@ const projects: Projects = {
       linkedin: 'https://www.linkedin.com/posts/alaa-otay8_ai-fastapi-cvparser-activity-7340349242932125700-fsR1?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACLQljUBfoH4EtVdvHXs51RwizxHpr7U45k'
     },
     {
+      name: 'Student Performance Predictor',
+      techstack: ['FastAPI', 'Python', 'scikit-learn', 'XGBoost', 'HTML5', 'CSS3', 'JavaScript'],
+      image: 'student_performance_predictor.webp',
+      description:
+        'An AI-powered web application that predicts student academic performance with 97% accuracy using machine learning. Features an interactive form with real-time sliders, ensemble methods (Random Forest, XGBoost), and advanced data processing including SMOTE for class imbalance handling.',
+      src: 'https://github.com/alaaotay8/student-performance-ai',
+      url: 'https://student-performance-predictor-ai-live.onrender.com/',
+      linkedin: 'https://www.linkedin.com/in/alaa-otay8/'
+    },
+    {
       name: 'AlaaOtay Portfolio',
       techstack: ['Vue.js', 'TypeScript', 'Tailwind CSS', 'i18n'],
       image: 'ao_portfolio.webp',
