@@ -26,7 +26,7 @@ const projects: Projects = {
       linkedin: 'https://www.linkedin.com/posts/alaa-otay8_laravel-php-webdevelopment-activity-7339452060934852609-u4mZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACLQljUBfoH4EtVdvHXs51RwizxHpr7U45k'
     },
     {
-      name: 'Prédicteur de Performance Étudiante',
+      name: 'Prédicteur de Performance Étudiant',
       techstack: ['FastAPI', 'Python', 'scikit-learn', 'XGBoost', 'HTML5', 'CSS3', 'JavaScript'],
       image: 'student_performance_predictor.webp',
       description:
