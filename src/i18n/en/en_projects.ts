@@ -6,14 +6,24 @@ const projects: Projects = {
   website: 'Website',
   main: [
     {
-      name: 'Restaurant Management System',
-      techstack: ['Laravel', 'MySQL', 'Bootstrap', 'PHP'],
-      image: 'restaurant_management.webp',
+      name: 'ComptaHub — Backend Microservices Accounting Platform',
+      techstack: ['FastAPI', 'Python', 'PostgreSQL', 'Docker', 'WebSockets', 'Microservices'],
+      image: 'comptahub.webp',
       description:
-        'A comprehensive restaurant management platform featuring an admin dashboard, CRUD operations, RBAC, sales analytics, and a responsive UI for ordering, booking, and tracking. Includes database migrations and local setup with Laragon.',
-      src: 'https://github.com/alaaotay8/restaurant-management-system',
+        'A production-ready SaaS accounting platform backend designed for SMEs and accounting firms, built with a scalable microservices architecture. Designed and implemented backend-only microservices (frontend handled by other team members). Built secure authentication with JWT & OAuth2 (Google / LinkedIn) and RBAC. Developed asynchronous Excel export with real-time progress tracking via WebSockets. Implemented real-time accounting dashboards using event-driven architecture (PostgreSQL LISTEN/NOTIFY). Containerized services with Docker and prepared CI/CD-ready deployment. Applied OWASP security best practices, rate limiting, and code quality checks (SonarQube, PEP8). Status: Production-ready (PFA project at 5DS).',
+      src: '',
       url: '',
-      linkedin: 'https://www.linkedin.com/posts/alaa-otay8_laravel-php-webdevelopment-activity-7339452060934852609-u4mZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACLQljUBfoH4EtVdvHXs51RwizxHpr7U45k'
+      linkedin: 'https://www.linkedin.com/posts/alaa-otay8_attestation-de-stage-activity-7406450727046311936-3oi8'
+    },
+    {
+      name: 'Taxini — Full-Stack Ride-Hailing Platform',
+      techstack: ['FastAPI', 'Vue 3', 'PostgreSQL', 'Supabase', 'WebSockets'],
+      image: 'taxini.webp',
+      description:
+        'A modern, real-time taxi booking platform built for the Tunisian market, focusing on performance, scalability, and security. Developed a FastAPI backend with REST APIs and WebSocket real-time features. Built a Vue 3 frontend with role-based dashboards (Rider / Driver / Admin). Implemented live trip tracking, pricing logic, and RBAC. Optimized performance (lazy loading, async APIs, DB pooling). Applied security best practices (JWT auth, input sanitization, secure CORS). Used a hybrid repository strategy (private production repo + public portfolio repo).',
+      src: 'https://github.com/alaaotay8/taxini-app-public.git',
+      url: 'https://taxini-app.vercel.app/',
+      linkedin: 'https://www.linkedin.com/posts/alaa-otay8_fastapi-supabase-vuejs-activity-7406454416943366145-ga2s'
     },
     {
       name: 'Career Profile Generator',
@@ -34,6 +44,16 @@ const projects: Projects = {
       src: 'https://github.com/alaaotay8/student-performance-ai',
       url: 'https://student-performance-predictor-ai-live.onrender.com/',
       linkedin: 'https://www.linkedin.com/in/alaa-otay8/'
+    },
+    {
+      name: 'Restaurant Management System',
+      techstack: ['Laravel', 'MySQL', 'Bootstrap', 'PHP'],
+      image: 'restaurant_management.webp',
+      description:
+        'A comprehensive restaurant management platform featuring an admin dashboard, CRUD operations, RBAC, sales analytics, and a responsive UI for ordering, booking, and tracking. Includes database migrations and local setup with Laragon.',
+      src: 'https://github.com/alaaotay8/restaurant-management-system',
+      url: '',
+      linkedin: 'https://www.linkedin.com/posts/alaa-otay8_laravel-php-webdevelopment-activity-7339452060934852609-u4mZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACLQljUBfoH4EtVdvHXs51RwizxHpr7U45k'
     },
     {
       name: 'AlaaOtay Portfolio',

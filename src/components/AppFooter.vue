@@ -78,11 +78,6 @@
           Thank you for visiting my portfolio.<br />
           Connect with me on social media or check out my work below!
         </span>
-        <br />
-        <span class="text-xs text-gray-400"
-          >Made with
-          <a href="https://github.com/alaaotay8/AlaaOtay_Portfolio" target="_blank">AlaaOtay_Portfolio</a></span
-        >
       </div>
       <div class="grid grid-cols-2 gap-x-3 gap-y-8 text-sm sm:grid-cols-3 lg:w-2/3">
         <div class="space-y-3">
@@ -143,5 +138,4 @@
 </template>
 
 <script setup lang="ts">
-// No need to import unused icons anymore
 </script>

@@ -68,37 +68,106 @@ const about: About = {
     list: [
         {
           category: 'Programming Languages',
-          items: ['PHP', 'Java', 'C', 'C#', 'Python']
+          items: [
+            'Python (FastAPI, async programming, backend services)',
+            'PHP (Laravel backend development)',
+            'Java',
+            'C',
+            'C#'
+          ]
         },
         {
           category: 'Web Development',
           items: [
-            'HTML/CSS',
+            'HTML / CSS',
             'JavaScript (jQuery, Ajax)',
-            'Laravel',
-            'Bootstrap',
-            'Vue.js'
+            'Laravel (MVC, authentication, CRUD, RBAC)',
+            'Bootstrap (responsive UI)',
+            'Vue.js (frontend integration & SPA concepts)'
           ]
         },
         {
-          category: 'Backend & Tools',
+          category: 'Backend, Databases & Tools',
           items: [
-            'REST APIs',
-            'Git',
-            'Laravel Mix',
+            'FastAPI (async APIs, microservices)',
+            'REST APIs (design & integration)',
+            'WebSockets (real-time dashboards, live updates)',
+            'PostgreSQL (advanced queries, LISTEN/NOTIFY, indexing)',
             'MySQL (Laragon)',
+            'Supabase (PostgreSQL, Auth, Storage, backend services)',
             'PL/SQL (Oracle)',
-            'Python packages (NumPy, OpenCV, JSON Schema)'
+            'SQLAlchemy (ORM)',
+            'Git & GitLab (version control, CI/CD)',
+            'Docker & Docker Compose (containerization)',
+            'Laravel Mix',
+            'Python packages: NumPy, OpenCV, Pandas, OpenPyXL, JSON Schema',
+            'API Documentation: Swagger / OpenAPI',
+            'Code Quality: SonarQube, PEP8'
           ]
         },
         {
-          category: 'Concepts',
+          category: 'DevOps & Cloud',
+          items: [
+            'CI/CD pipelines (GitLab CI)',
+            'Monitoring & observability (Grafana)',
+            'Containerized environments',
+            'Cloud Fundamentals (AWS Academy)',
+            'Remote server environments & deployment basics'
+          ]
+        },
+        {
+          category: 'Security & Authentication',
+          items: [
+            'JWT authentication',
+            'OAuth2 (Google & LinkedIn)',
+            'Role-Based Access Control (RBAC)',
+            'OWASP security best practices',
+            'Rate limiting & secure API design'
+          ]
+        },
+        {
+          category: 'Concepts & Engineering Practices',
           items: [
             'Object-Oriented Programming (OOP)',
-            'UML',
-            'Cloud Fundamentals (AWS Academy)',
-            'OCR',
-            'Object Detection'
+            'Microservices Architecture',
+            'Asynchronous & Event-driven systems',
+            'UML modeling',
+            'Agile Scrum methodology',
+            'Technical documentation & reporting',
+            'Database optimization & indexing'
+          ]
+        },
+        {
+          category: 'AI & Computer Vision',
+          items: [
+            'OCR (Tesseract OCR)',
+            'Object Detection (OpenCV)',
+            'LLM-based data extraction & validation'
+          ]
+        },
+        {
+          category: 'Software Engineering Practices',
+          items: [
+            'Clean architecture & modular design',
+            'API design & versioning',
+            'Error handling & resilience',
+            'Performance optimization',
+            'Code reviews & refactoring',
+            'Logging, monitoring & observability',
+            'Documentation-driven development',
+            'Production-readiness mindset'
+          ]
+        },
+        {
+          category: 'Professional & Collaboration Skills',
+          items: [
+            'Agile team collaboration',
+            'Cross-team communication (Backend ↔ Frontend)',
+            'Remote work & async communication',
+            'Task prioritization & time management',
+            'Working under deadlines',
+            'Adaptability in fast-paced environments',
+            'Technical reporting & clear documentation'
           ]
         }
       ]

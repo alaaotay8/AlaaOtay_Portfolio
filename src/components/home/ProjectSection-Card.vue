@@ -4,7 +4,7 @@
       <!-- Text and buttons -->
       <div class="order-2 flex w-full flex-col justify-center gap-y-2 px-0 py-2 md:w-1/2 md:px-2">
         <h2
-          class="open-sans text-ltext1 text-center text-xl font-bold text-slate-700 sm:text-start sm:text-2xl md:text-4xl"
+          class="open-sans text-ltext1 text-center text-lg font-extrabold text-slate-800 sm:text-start sm:text-xl md:text-2xl tracking-tight"
         >
           {{ name }}
         </h2>
@@ -19,9 +19,7 @@
             {{ tech }}
           </span>
         </div>
-        <p class="text-ltext2 open-sans text-justify text-sm sm:text-base sm:text-start">
-          {{ description }}
-        </p>
+        <div class="text-ltext2 open-sans text-justify text-sm sm:text-base sm:text-start leading-relaxed" v-html="formattedDescription"></div>
         <div class="flex flex-wrap justify-center gap-3 pt-3 sm:justify-start">
           <!-- GitHub Button -->
           <a
@@ -65,7 +63,7 @@
       </div>
       <!-- Image -->
       <div class="group mx-auto w-full md:w-1/2 flex items-center justify-center px-0 md:px-0">
-        <div class="container w-full aspect-video max-h-[350px]">
+        <div class="container w-full">
           <div class="tilt-box-wrap w-full h-full">
             <span class="t_over"></span>
             <span class="t_over"></span>
@@ -80,7 +78,7 @@
               <img
                 :src="getImageUrl()"
                 :alt="name + ' main image'"
-                class="w-full h-full object-cover object-center rounded-xl"
+                class="w-full h-auto object-contain object-center rounded-xl"
               />
             </div>
           </div>
@@ -91,6 +89,7 @@
 </template>
 
 <script lang="ts" setup>
+import { computed } from 'vue'
 import GlassButton from '@/components/GlassButton.vue'
 import WebIcon from '@/components/icons/WebIcon.vue'
 import GithubIcon from '@/components/icons/GithubIcon.vue'
@@ -134,6 +133,35 @@ const props = defineProps({
 const getImageUrl = () => {
   return new URL(`../../assets/img/projects/${props.image}`, import.meta.url).href
 }
+
+const formattedDescription = computed(() => {
+  let text = props.description
+  
+  // Important keywords to highlight - simplified approach
+  const keywords = [
+    'FastAPI', 'Python', 'PostgreSQL', 'Docker', 'WebSockets', 'Microservices',
+    'Vue 3', 'Supabase', 'Laravel', 'MySQL', 'Bootstrap', 'PHP',
+    'JWT', 'OAuth2', 'RBAC', 'OWASP', 'SonarQube', 'PEP8',
+    'Tesseract OCR', 'OpenAI', 'Hugging Face', 'scikit-learn', 'XGBoost',
+    'TypeScript', 'Tailwind CSS', 'Vue.js', 'REST APIs', 'CI/CD',
+    'JSON Schema', 'SQLAlchemy', 'GitLab CI', 'Grafana',
+    'SaaS', 'production-ready', 'real-time', 'asynchronous',
+    'event-driven', 'scalable', 'LISTEN/NOTIFY', 'CRUD',
+    'rate limiting', 'CORS', 'SMOTE', 'lazy loading', 'async APIs',
+    'DB pooling', 'i18n', 'Excel', 'Jira', 'Confluence'
+  ]
+  
+  // Sort by length (longest first) to avoid partial matches
+  keywords.sort((a: string, b: string) => b.length - a.length)
+  
+  // Replace keywords with bold dark text (no colors, just emphasis)
+  keywords.forEach(keyword => {
+    const regex = new RegExp(`\\b${keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'gi')
+    text = text.replace(regex, `<strong class="font-bold text-gray-900">$&</strong>`)
+  })
+  
+  return text
+})
 </script>
 
 <style scoped>

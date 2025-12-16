@@ -6,14 +6,24 @@ const projects: Projects = {
   website: 'Site Web',
   main: [
     {
-      name: 'Système de Gestion de Restaurant',
-      techstack: ['Laravel', 'MySQL', 'Bootstrap', 'PHP'],
-      image: 'restaurant_management.webp',
+      name: 'ComptaHub — Plateforme de Comptabilité Microservices Backend',
+      techstack: ['FastAPI', 'Python', 'PostgreSQL', 'Docker', 'WebSockets', 'Microservices'],
+      image: 'comptahub.webp',
       description:
-        "Plateforme complète de gestion de restaurant avec tableau de bord administrateur, opérations CRUD, gestion des rôles, statistiques de ventes et interface responsive pour la commande, la réservation et le suivi. Gestion des migrations et configuration locale avec Laragon.",
-      src: 'https://github.com/alaaotay8/restaurant-management-system',
+        "Plateforme backend SaaS de comptabilité prête pour la production, conçue pour les PME et cabinets comptables, avec une architecture microservices scalable. Conception et implémentation des microservices backend uniquement (frontend géré par d'autres membres de l'équipe). Authentification sécurisée avec JWT & OAuth2 (Google / LinkedIn) et RBAC. Développement d'exports Excel asynchrones avec suivi de progression en temps réel via WebSockets. Implémentation de tableaux de bord comptables en temps réel utilisant une architecture événementielle (PostgreSQL LISTEN/NOTIFY). Conteneurisation des services avec Docker et déploiement CI/CD prêt. Application des bonnes pratiques de sécurité OWASP, rate limiting et contrôles qualité du code (SonarQube, PEP8). Statut : Prêt pour la production (projet PFA chez 5DS).",
+      src: '',
       url: '',
-      linkedin: 'https://www.linkedin.com/posts/alaa-otay8_laravel-php-webdevelopment-activity-7339452060934852609-u4mZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACLQljUBfoH4EtVdvHXs51RwizxHpr7U45k'
+      linkedin: 'https://www.linkedin.com/posts/alaa-otay8_attestation-de-stage-activity-7406450727046311936-3oi8'
+    },
+    {
+      name: 'Taxini — Plateforme Full-Stack de Réservation de Taxi',
+      techstack: ['FastAPI', 'Vue 3', 'PostgreSQL', 'Supabase', 'WebSockets'],
+      image: 'taxini.webp',
+      description:
+        "Plateforme moderne de réservation de taxi en temps réel construite pour le marché tunisien, axée sur la performance, la scalabilité et la sécurité. Développement d'un backend FastAPI avec APIs REST et fonctionnalités temps réel WebSocket. Construction d'un frontend Vue 3 avec tableaux de bord basés sur les rôles (Passager / Chauffeur / Admin). Implémentation du suivi de trajet en direct, logique de tarification et RBAC. Optimisation des performances (lazy loading, APIs async, pooling DB). Application des bonnes pratiques de sécurité (auth JWT, sanitisation des entrées, CORS sécurisé). Utilisation d'une stratégie de dépôt hybride (dépôt privé production + dépôt public portfolio).",
+      src: 'https://github.com/alaaotay8/taxini-app-public.git',
+      url: 'https://taxini-app.vercel.app/',
+      linkedin: 'https://www.linkedin.com/posts/alaa-otay8_fastapi-supabase-vuejs-activity-7406454416943366145-ga2s'
     },
     {
       name: 'Générateur de Profils de Carrière',
@@ -23,7 +33,7 @@ const projects: Projects = {
         "Application FastAPI alimentée par l'IA pour extraire des données structurées de CV grâce à l'OCR et aux LLMs. Intègre Tesseract OCR, fallback Hugging Face, OpenAI, schémas JSON et logique de validation robuste.",
       src: 'https://github.com/alaaotay8/career-profile-generator',
       url: 'https://cv-insight-extractor.onrender.com/',
-      linkedin: 'https://www.linkedin.com/posts/alaa-otay8_laravel-php-webdevelopment-activity-7339452060934852609-u4mZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACLQljUBfoH4EtVdvHXs51RwizxHpr7U45k'
+      linkedin: 'https://www.linkedin.com/posts/alaa-otay8_ai-fastapi-cvparser-activity-7340349242932125700-fsR1?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACLQljUBfoH4EtVdvHXs51RwizxHpr7U45k'
     },
     {
       name: 'Prédicteur de Performance Étudiante',
@@ -34,6 +44,16 @@ const projects: Projects = {
       src: 'https://github.com/alaaotay8/student-performance-ai',
       url: 'https://student-performance-predictor-ai-live.onrender.com/',
       linkedin: 'https://www.linkedin.com/in/alaa-otay8/'
+    },
+    {
+      name: 'Système de Gestion de Restaurant',
+      techstack: ['Laravel', 'MySQL', 'Bootstrap', 'PHP'],
+      image: 'restaurant_management.webp',
+      description:
+        "Plateforme complète de gestion de restaurant avec tableau de bord administrateur, opérations CRUD, gestion des rôles, statistiques de ventes et interface responsive pour la commande, la réservation et le suivi. Gestion des migrations et configuration locale avec Laragon.",
+      src: 'https://github.com/alaaotay8/restaurant-management-system',
+      url: '',
+      linkedin: 'https://www.linkedin.com/posts/alaa-otay8_laravel-php-webdevelopment-activity-7339452060934852609-u4mZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACLQljUBfoH4EtVdvHXs51RwizxHpr7U45k'
     },
     {
       name: 'AlaaOtay Portfolio',

@@ -63,42 +63,111 @@ const about: About = {
     { name: 'Français', level: 'Courant' }
     ]
   },
-skills: {
-  title: 'Compétences Clés',
-  list: [
+  skills: {
+    title: 'Compétences Clés',
+    list: [
       {
         category: 'Langages de programmation',
-        items: ['PHP', 'Java', 'C', 'C#', 'Python']
+        items: [
+          'Python (FastAPI, programmation asynchrone, services backend)',
+          'PHP (développement backend Laravel)',
+          'Java',
+          'C',
+          'C#'
+        ]
       },
       {
         category: 'Développement Web',
         items: [
-          'HTML/CSS',
+          'HTML / CSS',
           'JavaScript (jQuery, Ajax)',
-          'Laravel',
-          'Bootstrap',
-          'Vue.js'
+          'Laravel (MVC, authentification, CRUD, RBAC)',
+          'Bootstrap (UI responsive)',
+          'Vue.js (intégration frontend & concepts SPA)'
         ]
       },
       {
-        category: 'Backend & Outils',
+        category: 'Backend, Bases de données & Outils',
         items: [
-          'REST API',
-          'Git',
-          'Laravel Mix',
+          'FastAPI (APIs asynchrones, microservices)',
+          'REST APIs (conception & intégration)',
+          'WebSockets (tableaux de bord temps réel, mises à jour live)',
+          'PostgreSQL (requêtes avancées, LISTEN/NOTIFY, indexation)',
           'MySQL (Laragon)',
+          'Supabase (PostgreSQL, Auth, Storage, services backend)',
           'PL/SQL (Oracle)',
-          'packages Python (NumPy, OpenCV, JSON Schema)'
+          'SQLAlchemy (ORM)',
+          'Git & GitLab (contrôle de version, CI/CD)',
+          'Docker & Docker Compose (conteneurisation)',
+          'Laravel Mix',
+          'Packages Python : NumPy, OpenCV, Pandas, OpenPyXL, JSON Schema',
+          'Documentation API : Swagger / OpenAPI',
+          'Qualité du code : SonarQube, PEP8'
         ]
       },
       {
-        category: 'Concepts',
+        category: 'DevOps & Cloud',
+        items: [
+          'Pipelines CI/CD (GitLab CI)',
+          'Monitoring & observabilité (Grafana)',
+          'Environnements conteneurisés',
+          'Fondamentaux Cloud (AWS Academy)',
+          'Environnements serveurs distants & bases du déploiement'
+        ]
+      },
+      {
+        category: 'Sécurité & Authentification',
+        items: [
+          'Authentification JWT',
+          'OAuth2 (Google & LinkedIn)',
+          'Contrôle d\'accès basé sur les rôles (RBAC)',
+          'Bonnes pratiques de sécurité OWASP',
+          'Rate limiting & conception d\'API sécurisées'
+        ]
+      },
+      {
+        category: 'Concepts & Pratiques d\'ingénierie',
         items: [
           'Programmation Orientée Objet (POO)',
-          'UML',
-          'Fondamentaux Cloud (AWS Academy)',
-          'OCR',
-          'Détection d’objets'
+          'Architecture Microservices',
+          'Systèmes asynchrones & événementiels',
+          'Modélisation UML',
+          'Méthodologie Agile Scrum',
+          'Documentation technique & reporting',
+          'Optimisation & indexation de bases de données'
+        ]
+      },
+      {
+        category: 'IA & Vision par ordinateur',
+        items: [
+          'OCR (Tesseract OCR)',
+          'Détection d\'objets (OpenCV)',
+          'Extraction & validation de données basées sur LLM'
+        ]
+      },
+      {
+        category: 'Pratiques d\'ingénierie logicielle',
+        items: [
+          'Architecture propre & conception modulaire',
+          'Conception & versioning d\'API',
+          'Gestion des erreurs & résilience',
+          'Optimisation des performances',
+          'Revues de code & refactoring',
+          'Logging, monitoring & observabilité',
+          'Développement orienté documentation',
+          'Mentalité production-ready'
+        ]
+      },
+      {
+        category: 'Compétences professionnelles & collaboration',
+        items: [
+          'Collaboration en équipe Agile',
+          'Communication inter-équipes (Backend ↔ Frontend)',
+          'Travail à distance & communication asynchrone',
+          'Priorisation des tâches & gestion du temps',
+          'Travail sous pression et deadlines',
+          'Adaptabilité dans des environnements dynamiques',
+          'Reporting technique & documentation claire'
         ]
       }
     ]

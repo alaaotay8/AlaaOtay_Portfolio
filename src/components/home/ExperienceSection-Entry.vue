@@ -54,20 +54,18 @@
         </span>
       </div>
       <div class="open-sans pt-1 text-sm sm:text-base text-gray-800">
-        <p>
-          {{ props.description }}
-        </p>
+        <p class="leading-relaxed" v-html="formattedDescription"></p>
         <ul
           v-if="props.highlights[0] != ''"
-          class="list-disc list-inside mt-2 text-sm sm:text-base"
+          class="list-disc list-inside mt-2 text-sm sm:text-base space-y-1"
         >
           <li
             v-for="highlight in props.highlights"
             :key="highlight.toString()"
-            class="pl-1 before:left-[-35px] "
+            class="pl-1 before:left-[-35px] leading-relaxed"
             style="text-indent: -1em; padding-left: 1.5em;"
+            v-html="formatHighlight(highlight)"
           >
-            {{ highlight }}
           </li>
         </ul>
       </div>
@@ -76,8 +74,10 @@
 </template>
 
 <script lang="ts" setup>
+import { computed } from 'vue'
 import { useLocalizedDate } from '@/composables/LocalizedDate'
 const { getDate, getTimeBetween } = useLocalizedDate()
+
 const props = defineProps({
   position: {
     type: String,
@@ -104,8 +104,39 @@ const props = defineProps({
     default: 'Description of the job'
   },
   highlights: {
-    type: Array<String>,
+    type: Array as () => string[],
     default: () => []
   }
 })
+
+const formatText = (text: string) => {
+  // Important keywords to highlight - simplified approach
+  const keywords = [
+    'FastAPI', 'Python', 'PostgreSQL', 'Docker', 'WebSockets', 'Microservices',
+    'Vue 3', 'Supabase', 'Laravel', 'MySQL', 'Bootstrap', 'PHP',
+    'JWT', 'OAuth2', 'RBAC', 'OWASP', 'SonarQube', 'PEP8',
+    'Tesseract OCR', 'OpenAI', 'Hugging Face', 'scikit-learn', 'XGBoost',
+    'TypeScript', 'Tailwind CSS', 'Vue.js', 'REST APIs', 'CI/CD',
+    'JSON Schema', 'SQLAlchemy', 'GitLab CI', 'Grafana', 'Jira', 'Confluence',
+    'SaaS', 'production-ready', 'real-time', 'asynchronous',
+    'event-driven', 'scalable', 'LISTEN/NOTIFY', 'CRUD',
+    'rate limiting', 'CORS', 'SMOTE', 'lazy loading', 'async APIs',
+    'DB pooling', 'i18n', 'Excel', 'ComptaHub', 'Auth', 'Storage',
+    'Google', 'LinkedIn', 'Agile', 'Scrum', 'DevOps'
+  ]
+  
+  // Sort by length (longest first) to avoid partial matches
+  keywords.sort((a: string, b: string) => b.length - a.length)
+  
+  // Replace keywords with bold dark text (no colors, just emphasis)
+  keywords.forEach(keyword => {
+    const regex = new RegExp(`\\b${keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'gi')
+    text = text.replace(regex, `<strong class="font-bold text-gray-900">$&</strong>`)
+  })
+  
+  return text
+}
+
+const formattedDescription = computed(() => formatText(props.description))
+const formatHighlight = (highlight: string) => formatText(highlight as string)
 </script>
