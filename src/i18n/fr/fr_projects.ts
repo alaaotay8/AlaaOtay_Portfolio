@@ -31,16 +31,16 @@ const projects: Projects = {
       image: 'career_profile_generator.webp',
       description:
         "Application FastAPI alimentée par l'IA pour extraire des données structurées de CV grâce à l'OCR et aux LLMs. Intègre Tesseract OCR, fallback Hugging Face, OpenAI, schémas JSON et logique de validation robuste.",
-      src: 'https://github.com/alaaotay8/career-profile-generator',
+      src: 'https://github.com/alaaotay8/cv-insight-extractor',
       url: 'https://cv-insight-extractor.onrender.com/',
       linkedin: 'https://www.linkedin.com/posts/alaa-otay8_ai-fastapi-cvparser-activity-7340349242932125700-fsR1?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACLQljUBfoH4EtVdvHXs51RwizxHpr7U45k'
     },
     {
-      name: 'Prédicteur de Performance Étudiante',
+      name: 'Prédicteur de Performance Étudiant',
       techstack: ['FastAPI', 'Python', 'scikit-learn', 'XGBoost', 'HTML5', 'CSS3', 'JavaScript'],
       image: 'student_performance_predictor.webp',
       description:
-        "Application web alimentée par l'IA qui prédit les performances académiques des étudiants avec une précision de 97% grâce à l'apprentissage automatique. Propose un formulaire interactif avec curseurs en temps réel, méthodes d'ensemble (Random Forest, XGBoost), et traitement de données avancé incluant SMOTE pour gérer le déséquilibre des classes.",
+        "Application web alimentée par l'IA qui prédit les performances académiques des étudiants avec une précision de 92% grâce à l'apprentissage automatique. Propose un formulaire interactif avec curseurs en temps réel, méthodes d'ensemble (Random Forest, XGBoost), et traitement de données avancé incluant SMOTE pour gérer le déséquilibre des classes.",
       src: 'https://github.com/alaaotay8/student-performance-ai',
       url: 'https://student-performance-predictor-ai-live.onrender.com/',
       linkedin: 'https://www.linkedin.com/in/alaa-otay8/'
