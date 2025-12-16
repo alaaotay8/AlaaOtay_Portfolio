@@ -15,7 +15,7 @@ const experience: Experience = {
       startDate: '2025-07',
       endDate: '2025-09',
       highlights: [
-        'Developed and maintained backend features for client-oriented applications.',
+        'Developed and maintained backend features with FastAPI for client-oriented applications.',
         'Worked with Supabase (PostgreSQL, Auth, Storage) for backend services and data management.',
         'Integrated REST APIs and optimized backend performance.',
         'Collaborated with distributed teams in Agile workflows.',
@@ -23,7 +23,7 @@ const experience: Experience = {
         'Managed responsibilities during a 2-week overlap with another internship, improving time management, prioritization, and adaptability.'
       ],
       description:
-        'Contributed to backend development within a Swiss full-service digital agency delivering tailor-made solutions worldwide. Focus: Backend engineering, Supabase, APIs, DevOps fundamentals, professional project delivery.'
+        'Contributed to backend development within a Swiss full-service digital agency delivering tailor-made solutions worldwide. Focus: Backend engineering, FastAPI, Supabase, APIs, DevOps fundamentals, professional project delivery.'
     },
     {
       company: '5DS – France',

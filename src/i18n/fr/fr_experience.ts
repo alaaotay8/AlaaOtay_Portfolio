@@ -15,7 +15,7 @@ const experience: Experience = {
       startDate: '2025-07',
       endDate: '2025-09',
       highlights: [
-        'Développement et maintenance de fonctionnalités backend pour des applications orientées client.',
+        'Développement et maintenance de fonctionnalités backend avec FastAPI pour des applications orientées client.',
         'Travail avec Supabase (PostgreSQL, Auth, Storage) pour les services backend et la gestion des données.',
         "Intégration d'APIs REST et optimisation des performances backend.",
         'Collaboration avec des équipes distribuées dans des workflows Agile.',
@@ -23,7 +23,7 @@ const experience: Experience = {
         "Gestion des responsabilités pendant un chevauchement de 2 semaines avec un autre stage, améliorant la gestion du temps, la priorisation et l'adaptabilité."
       ],
       description:
-        "Contribution au développement backend au sein d'une agence digitale suisse offrant des solutions sur mesure à l'international. Focus : Ingénierie backend, Supabase, APIs, fondamentaux DevOps, livraison de projets professionnels."
+        "Contribution au développement backend au sein d'une agence digitale suisse offrant des solutions sur mesure à l'international. Focus : Ingénierie backend, FastAPI, Supabase, APIs, fondamentaux DevOps, livraison de projets professionnels."
     },
     {
       company: '5DS – France',
